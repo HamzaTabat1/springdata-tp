@@ -42,10 +42,10 @@ public class SpringappApplication implements CommandLineRunner {
             System.out.println(p.toString());
         });
         System.out.println("-----------------------------");
-        List<Product> productList2 =  productRepository.search("%C%");
+        /*List<Product> productList2 =  productRepository.search("%C%");
         productList2.forEach(p -> {
             System.out.println(p.toString());
-        });
+        });*/
         System.out.println("-----------------------------");
         List<Product> productList3 =  productRepository.findByPriceGreaterThan(3000);
         productList3.forEach(p -> {
